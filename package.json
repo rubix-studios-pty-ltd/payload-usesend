@@ -1,6 +1,6 @@
 {
   "name": "@rubixstudios/payload-usesend",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Official PayloadCMS adapter for sending emails via the Usesend API (previously Unsend).",
   "homepage": "https://rubixstudios.com.au",
   "repository": {
