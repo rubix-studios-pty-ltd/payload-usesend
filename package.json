@@ -82,7 +82,7 @@
     "semantic-release": "^24.2.8",
     "ts-jest": "^29.4.1",
     "turbo": "^2.5.6",
-    "typescript": "5.9.2"
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "payload": "^3.28.1"
@@ -101,14 +101,6 @@
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
       }
-    }
-  },
-  "pnpm": {
-    "overrides": {
-      "@eslint/plugin-kit": "^0.3.4",
-      "@typescript-eslint/parser": "^8.43.0",
-      "@typescript-eslint/eslint-plugin": "^8.43.0",
-      "@typescript-eslint/typescript-estree": "^8.43.0"
     }
   },
   "packageManager": "pnpm@10.15.1"
