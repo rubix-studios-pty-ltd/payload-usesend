@@ -3,6 +3,7 @@
 This adapter integrates [PayloadCMS](https://payloadcms.com) with the [useSend](https://usesend.com) REST API for transactional and marketing emails.
 
 [![npm version](https://img.shields.io/npm/v/@rubixstudios/payload-usesend.svg)](https://www.npmjs.com/package/@rubixstudios/payload-usesend)
+![Release](https://github.com/rubix-studios-pty-ltd/payload-usesend/actions/workflows/release.yml/badge.svg)
 
 ## Installation
 
