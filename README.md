@@ -31,7 +31,7 @@ export default buildConfig({
     apiKey: process.env.USESEND_API_KEY!,
     useSendUrl: process.env.USESEND_URL!,
     defaultFromName: 'Rubix Studios',
-    defaultFromAddress: 'hello@rubixstudios.com.au',
+    defaultFromAddress: 'example@mail.com',
     // Optional:
     // scheduledAt: '2025-08-01T10:00:00Z',
     // templateId: 'template-uuid',
@@ -59,8 +59,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For support or inquiries:
 
 - LinkedIn: [rubixvi](https://www.linkedin.com/in/rubixvi/)
-- Facebook: [rubixvi](https://www.facebook.com/rubixvi/)
-- X: [@rubixvi](https://x.com/rubixvi)
 - Website: [Rubix Studios](https://rubixstudios.com.au)
 
 ## Author
