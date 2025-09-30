@@ -2,6 +2,8 @@
   "name": "@rubixstudios/payload-usesend",
   "version": "1.0.10",
   "description": "Official PayloadCMS adapter for sending emails via the Usesend API (previously Unsend).",
+  "license": "MIT",
+  "author": "Rubix Studios <hello@rubixstudios.com.au> (https://rubixstudios.com.au)",
   "homepage": "https://rubixstudios.com.au",
   "repository": {
     "type": "git",
@@ -11,6 +13,14 @@
   "bugs": {
     "url": "https://github.com/rubix-studios-pty-ltd/payload-usesend/issues"
   },
+  "maintainers": [
+    {
+      "name": "Rubix Studios",
+      "email": "hello@rubixstudios.com.au",
+      "url": "https://rubixstudios.com.au"
+    }
+  ],
+  "type": "module",
   "keywords": [
     "payload",
     "payloadcms",
@@ -28,17 +38,7 @@
     "adapter",
     "rubixstudios"
   ],
-  "license": "MIT",
-  "author": "Rubix Studios <hello@rubixstudios.com.au> (https://rubixstudios.com.au)",
-  "maintainers": [
-    {
-      "name": "Rubix Studios",
-      "email": "hello@rubixstudios.com.au",
-      "url": "https://rubixstudios.com.au"
-    }
-  ],
   "sideEffects": false,
-  "type": "module",
   "exports": {
     ".": {
       "import": "./src/index.ts",
@@ -71,7 +71,7 @@
     "@swc/core": "^1.13.20",
     "@swc/jest": "^0.2.39",
     "@types/jest": "30.0.0",
-    "@types/node": "^24.5.2",
+    "@types/node": "^24.6.0",
     "eslint": "^9.36.0",
     "jest": "^30.2.0",
     "rimraf": "^6.0.1",
