@@ -1,4 +1,4 @@
-# PayloadCMS + Unsend.dev Email Adapter
+# PayloadCMS + useSend Email Adapter
 
 This adapter integrates [PayloadCMS](https://payloadcms.com) with the [useSend](https://usesend.com) REST API for transactional and marketing emails.
 
