@@ -80,7 +80,7 @@
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
-    "payload": "^3.28.1"
+    "payload": "^3.57.0"
   },
   "engines": {
     "node": "^22.19.0 || >=20.9.0"
@@ -96,6 +96,13 @@
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
       }
+    }
+  },
+  "pnpm": {
+    "overrides": {
+      "@typescript-eslint/parser": "^8.43.0",
+      "@typescript-eslint/eslint-plugin": "^8.43.0",
+      "@typescript-eslint/typescript-estree": "^8.43.0"
     }
   },
   "packageManager": "pnpm@10.17.1"
