@@ -31,16 +31,7 @@
             "@semantic-release/npm",
             {
                 "npmPublish": true,
-                "pkgRoot": "dist",
-                "registry": "https://registry.npmjs.org/"
-            }
-        ],
-        [
-            "@semantic-release/npm",
-            {
-                "npmPublish": true,
-                "pkgRoot": "dist",
-                "registry": "https://npm.pkg.github.com/rubix-studios-pty-ltd"
+                "pkgRoot": "dist"
             }
         ],
         "@semantic-release/github"

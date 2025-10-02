@@ -57,9 +57,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: pnpm install --frozen-lockfile
+        working-directory: packages/payload-usesend
 
       - name: Release with semantic-release
         run: pnpm release
+        working-directory: packages/payload-usesend
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
