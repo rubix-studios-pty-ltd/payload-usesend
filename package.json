@@ -7,7 +7,7 @@
   "homepage": "https://rubixstudios.com.au",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rubix-studios-pty-ltd/payload-usesend.git"
+    "url": "git+https://github.com/rubix-studios-pty-ltd/payload-usesend.git"
   },
   "bugs": {
     "url": "https://github.com/rubix-studios-pty-ltd/payload-usesend/issues"
