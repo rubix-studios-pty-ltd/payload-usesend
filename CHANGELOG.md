@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.3](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.2...v1.1.3) (2025-10-10)
+
+
+### Bug Fixes
+
+* update @types/node to version 24.7.1 and pnpm to version 10.18.2 ([d51163c](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/d51163ce2b01fa81095a0b70e18484f845db00c8))
+* update caniuse-lite and electron-to-chromium versions in pnpm-lock.yaml ([b4e9fb5](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/b4e9fb578e0aad878e76bcc9c5b58e949d1672bf))
+
 ## [1.1.2](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.1...v1.1.2) (2025-10-02)
 
 
