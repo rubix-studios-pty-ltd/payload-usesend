@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.4](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.3...v1.1.4) (2025-10-16)
+
+
+### Bug Fixes
+
+* bump @semantic-release/github to ^12.0.0, @types/node to ^24.8.0 and semantic-release to ^25.0.0; regenerate pnpm-lock.yaml ([48346a1](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/48346a1c7cca400cf7cfe3090aa59339d5a9af46))
+* bump @semantic-release/npm to ^13.0.0, @types/node to ^24.7.2 and pnpm to 10.18.3; regenerate pnpm-lock.yaml ([683b555](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/683b555245092b3d86f50b30c722bfeef6fe56e7))
+* bump baseline-browser-mapping to 2.8.17 in pnpm-lock.yaml ([c9afb83](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/c9afb834779d3879d33744ad8df949955a9e3020))
+* update electron-to-chromium to 1.5.237 in pnpm-lock.yaml ([213c7ed](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/213c7ed4e4fc53bc36ad9cf5bb037fbcc0af3bd6))
+
 ## [1.1.3](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.2...v1.1.3) (2025-10-10)
 
 
