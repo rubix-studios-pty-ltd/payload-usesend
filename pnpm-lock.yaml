@@ -1093,8 +1093,8 @@ packages:
   '@types/yargs-parser@21.0.3':
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
 
-  '@types/yargs@17.0.33':
-    resolution: {integrity: sha512-WpxBCKWPLr4xSsHgz511rFJAM+wS28w2zEO1QDNY5zM/S8ok70NNfztH0xwhqKyaK0OHCbN98LDAZuy1ctxDkA==}
+  '@types/yargs@17.0.34':
+    resolution: {integrity: sha512-KExbHVa92aJpw9WDQvzBaGVE2/Pz+pLZQloT2hjL8IqsZnV62rlPOYvNnLmf/L2dyllfVUOVBj64M0z/46eR2A==}
 
   '@typescript-eslint/eslint-plugin@8.26.1':
     resolution: {integrity: sha512-2X3mwqsj9Bd3Ciz508ZUtoQQYpOhU/kWoUqIf49H8Z0+Vbh6UF/y0OEYp0Q0axOGzaBGs7QxRwq0knSQ8khQNA==}
@@ -1903,8 +1903,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.239:
-    resolution: {integrity: sha512-1y5w0Zsq39MSPmEjHjbizvhYoTaulVtivpxkp5q5kaPmQtsK6/2nvAzGRxNMS9DoYySp9PkW0MAQDwU1m764mg==}
+  electron-to-chromium@1.5.241:
+    resolution: {integrity: sha512-ILMvKX/ZV5WIJzzdtuHg8xquk2y0BOGlFOxBVwTpbiXqWIH0hamG45ddU4R3PQ0gYu+xgo0vdHXHli9sHIGb4w==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -4081,8 +4081,8 @@ packages:
       typescript:
         optional: true
 
-  ts-pattern@5.8.0:
-    resolution: {integrity: sha512-kIjN2qmWiHnhgr5DAkAafF9fwb0T5OhMVSWrm8XEdTFnX6+wfXwYOFjeF86UZ54vduqiR7BfqScFmXSzSaH8oA==}
+  ts-pattern@5.9.0:
+    resolution: {integrity: sha512-6s5V71mX8qBUmlgbrfL33xDUwO0fq48rxAu2LBE11WBeGdpCPOsXksQbZJHvHwhrd3QjUusd3mAOM5Gg0mFBLg==}
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
@@ -4678,7 +4678,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 8.46.2(typescript@5.7.3)
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -4696,7 +4696,7 @@ snapshots:
       '@typescript-eslint/types': 8.46.2
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       birecord: 0.1.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -4733,7 +4733,7 @@ snapshots:
       '@typescript-eslint/scope-manager': 8.46.2
       '@typescript-eslint/types': 8.46.2
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -4744,7 +4744,7 @@ snapshots:
       '@eslint-react/eff': 1.31.0
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       picomatch: 4.0.3
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -4758,7 +4758,7 @@ snapshots:
       '@typescript-eslint/types': 8.46.2
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -5046,7 +5046,7 @@ snapshots:
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
       '@types/node': 24.9.1
-      '@types/yargs': 17.0.33
+      '@types/yargs': 17.0.34
       chalk: 4.1.2
 
   '@jridgewell/gen-mapping@0.3.13':
@@ -5579,7 +5579,7 @@ snapshots:
 
   '@types/yargs-parser@21.0.3': {}
 
-  '@types/yargs@17.0.33':
+  '@types/yargs@17.0.34':
     dependencies:
       '@types/yargs-parser': 21.0.3
 
@@ -6202,7 +6202,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.8.20
       caniuse-lite: 1.0.30001751
-      electron-to-chromium: 1.5.239
+      electron-to-chromium: 1.5.241
       node-releases: 2.0.26
       update-browserslist-db: 1.1.4(browserslist@4.27.0)
 
@@ -6498,7 +6498,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.239: {}
+  electron-to-chromium@1.5.241: {}
 
   emittery@0.13.1: {}
 
@@ -6746,7 +6746,7 @@ snapshots:
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       eslint: 9.22.0
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     optionalDependencies:
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -6766,7 +6766,7 @@ snapshots:
       compare-versions: 6.1.1
       eslint: 9.22.0
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     optionalDependencies:
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -6786,7 +6786,7 @@ snapshots:
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       eslint: 9.22.0
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     optionalDependencies:
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -6810,7 +6810,7 @@ snapshots:
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       eslint: 9.22.0
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     optionalDependencies:
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -6829,7 +6829,7 @@ snapshots:
       '@typescript-eslint/utils': 8.46.2(eslint@9.22.0)(typescript@5.7.3)
       eslint: 9.22.0
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     optionalDependencies:
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -6850,7 +6850,7 @@ snapshots:
       compare-versions: 6.1.1
       eslint: 9.22.0
       string-ts: 2.2.1
-      ts-pattern: 5.8.0
+      ts-pattern: 5.9.0
     optionalDependencies:
       ts-api-utils: 2.1.0(typescript@5.9.3)
       typescript: 5.7.3
@@ -9064,7 +9064,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  ts-pattern@5.8.0: {}
+  ts-pattern@5.9.0: {}
 
   tslib@2.8.1: {}
 
