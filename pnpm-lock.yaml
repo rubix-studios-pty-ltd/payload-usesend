@@ -13,7 +13,7 @@ importers:
         version: 3.57.0(graphql@16.11.0)(typescript@5.9.3)
     devDependencies:
       '@jest/globals':
-        specifier: 30.2.0
+        specifier: ^30.2.0
         version: 30.2.0
       '@payloadcms/eslint-config':
         specifier: ^3.28.0
@@ -24,12 +24,6 @@ importers:
       '@semantic-release/git':
         specifier: ^10.0.1
         version: 10.0.1(semantic-release@25.0.2(typescript@5.9.3))
-      '@semantic-release/github':
-        specifier: ^12.0.2
-        version: 12.0.2(semantic-release@25.0.2(typescript@5.9.3))
-      '@semantic-release/npm':
-        specifier: ^13.1.2
-        version: 13.1.2(semantic-release@25.0.2(typescript@5.9.3))
       '@swc/cli':
         specifier: ^0.7.9
         version: 0.7.9(@swc/core@1.15.3)
@@ -40,7 +34,7 @@ importers:
         specifier: ^0.2.39
         version: 0.2.39(@swc/core@1.15.3)
       '@types/jest':
-        specifier: 30.0.0
+        specifier: ^30.0.0
         version: 30.0.0
       '@types/node':
         specifier: ^24.10.1
@@ -5619,10 +5613,10 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@typescript-eslint/eslint-plugin@8.26.1(@typescript-eslint/parser@8.26.1(eslint@9.22.0)(typescript@5.7.3))(eslint@9.22.0)(typescript@5.7.3)':
+  '@typescript-eslint/eslint-plugin@8.26.1(@typescript-eslint/parser@8.26.1(eslint@9.39.1)(typescript@5.9.3))(eslint@9.22.0)(typescript@5.7.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.26.1(eslint@9.22.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.26.1(eslint@9.39.1)(typescript@5.9.3)
       '@typescript-eslint/scope-manager': 8.26.1
       '@typescript-eslint/type-utils': 8.26.1(eslint@9.22.0)(typescript@5.7.3)
       '@typescript-eslint/utils': 8.26.1(eslint@9.22.0)(typescript@5.7.3)
@@ -5639,7 +5633,7 @@ snapshots:
   '@typescript-eslint/eslint-plugin@8.45.0(@typescript-eslint/parser@8.26.1(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.26.1(eslint@9.22.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.26.1(eslint@9.39.1)(typescript@5.9.3)
       '@typescript-eslint/scope-manager': 8.45.0
       '@typescript-eslint/type-utils': 8.45.0(eslint@9.39.1)(typescript@5.9.3)
       '@typescript-eslint/utils': 8.45.0(eslint@9.39.1)(typescript@5.9.3)
@@ -5663,6 +5657,18 @@ snapshots:
       debug: 4.4.3
       eslint: 9.22.0
       typescript: 5.7.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/parser@8.26.1(eslint@9.39.1)(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/scope-manager': 8.26.1
+      '@typescript-eslint/types': 8.26.1
+      '@typescript-eslint/typescript-estree': 8.26.1(typescript@5.9.3)
+      '@typescript-eslint/visitor-keys': 8.26.1
+      debug: 4.4.3
+      eslint: 9.39.1
+      typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
 
@@ -5769,6 +5775,20 @@ snapshots:
       semver: 7.7.3
       ts-api-utils: 2.1.0(typescript@5.7.3)
       typescript: 5.7.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/typescript-estree@8.26.1(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/types': 8.26.1
+      '@typescript-eslint/visitor-keys': 8.26.1
+      debug: 4.4.3
+      fast-glob: 3.3.3
+      is-glob: 4.0.3
+      minimatch: 9.0.5
+      semver: 7.7.3
+      ts-api-utils: 2.1.0(typescript@5.9.3)
+      typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
 
@@ -9121,7 +9141,6 @@ snapshots:
   ts-api-utils@2.1.0(typescript@5.9.3):
     dependencies:
       typescript: 5.9.3
-    optional: true
 
   ts-essentials@10.0.3(typescript@5.9.3):
     optionalDependencies:
@@ -9193,7 +9212,7 @@ snapshots:
 
   typescript-eslint@8.26.1(eslint@9.22.0)(typescript@5.7.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.26.1(@typescript-eslint/parser@8.26.1(eslint@9.22.0)(typescript@5.7.3))(eslint@9.22.0)(typescript@5.7.3)
+      '@typescript-eslint/eslint-plugin': 8.26.1(@typescript-eslint/parser@8.26.1(eslint@9.39.1)(typescript@5.9.3))(eslint@9.22.0)(typescript@5.7.3)
       '@typescript-eslint/parser': 8.26.1(eslint@9.22.0)(typescript@5.7.3)
       '@typescript-eslint/utils': 8.26.1(eslint@9.22.0)(typescript@5.7.3)
       eslint: 9.22.0
