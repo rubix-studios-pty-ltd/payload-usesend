@@ -13,7 +13,7 @@ importers:
         version: 3.57.0(graphql@16.11.0)(typescript@5.9.3)
     devDependencies:
       '@jest/globals':
-        specifier: 30.2.0
+        specifier: ^30.2.0
         version: 30.2.0
       '@payloadcms/eslint-config':
         specifier: ^3.28.0
@@ -28,7 +28,7 @@ importers:
         specifier: ^0.2.39
         version: 0.2.39(@swc/core@1.15.3)
       '@types/jest':
-        specifier: 30.0.0
+        specifier: ^30.0.0
         version: 30.0.0
       '@types/node':
         specifier: ^24.10.1
