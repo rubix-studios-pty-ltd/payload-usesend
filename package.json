@@ -86,5 +86,10 @@
     "node": ">=22 <24",
     "pnpm": ">=10"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "provenance": true
+  },
   "packageManager": "pnpm@10.24.0"
 }
