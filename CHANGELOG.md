@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.9](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.8...v1.1.9) (2025-12-04)
+
+
+### Bug Fixes
+
+* upgrade npm to latest version for OIDC compatibility in release workflow ([d13da82](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/d13da82f2ae560dc9b7e2542b1d0653731e46751))
+
 ## [1.1.8](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.7...v1.1.8) (2025-11-29)
 
 
