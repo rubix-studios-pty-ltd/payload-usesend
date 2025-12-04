@@ -65,16 +65,12 @@ jobs:
 
       - name: Upgrade npm for OIDC
         run: |
-          npm install -g npm@11.6.4
+          npm install -g npm@latest
           echo "npm version: $(npm --version)"
-
+          
       - run: pnpm install --frozen-lockfile
-      
-      - name: Build package
-        run: pnpm build
-
-      - name: Release with semantic-release
-        run: pnpm release
+      - run: pnpm build
+      - run: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
