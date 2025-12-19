@@ -67,11 +67,11 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@swc/cli": "^0.7.9",
-    "@swc/core": "^1.15.3",
+    "@swc/core": "^1.15.7",
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.10.1",
-    "eslint": "^9.39.1",
+    "@types/node": "^25.0.3",
+    "eslint": "^9.39.2",
     "jest": "^30.2.0",
     "rimraf": "^6.1.2",
     "semantic-release": "^25.0.2",
@@ -89,5 +89,5 @@
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "packageManager": "pnpm@10.24.0"
+  "packageManager": "pnpm@10.26.1"
 }
