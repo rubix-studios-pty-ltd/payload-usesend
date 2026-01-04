@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.10](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.9...v1.1.10) (2026-01-04)
+
+
+### Bug Fixes
+
+* update copyright year in LICENSE.md ([147f90f](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/147f90fca7852bac4298383a928cbafcae01650f))
+* update packageManager to pnpm@10.26.2 ([2309445](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/2309445240e97855171dd7f306328b71f78c6c90))
+* update packageManager to pnpm@10.27.0 ([f807eb3](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/f807eb37a0e9b8e37af133268cd9a517510a209d))
+* update ts-api-utils and cjs-module-lexer versions in pnpm-lock.yaml ([499ebdc](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/499ebdce07da5a2d717f29268bf08a54dfa90319))
+
 ## [1.1.9](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.8...v1.1.9) (2025-12-04)
 
 
