@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [1.2.0](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.10...v1.2.0) (2026-01-14)
+
+
+### Features
+
+* update dependencies and expand Node.js version support ([25b30a8](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/25b30a8def5feba535935b1db479f0616bdff2ab))
+
 ## [1.1.10](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.1.9...v1.1.10) (2026-01-04)
 
 
