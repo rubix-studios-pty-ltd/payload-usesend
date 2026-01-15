@@ -70,7 +70,7 @@
     "@swc/core": "^1.15.8",
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.0.8",
+    "@types/node": "^25.0.9",
     "eslint": "^9.39.2",
     "jest": "^30.2.0",
     "rimraf": "^6.1.2",
@@ -81,7 +81,7 @@
     "payload": "^3.66.0"
   },
   "engines": {
-    "node": ">=22.0.0 <30.0.0",
+    "node": ">=24",
     "pnpm": ">=10"
   },
   "publishConfig": {
