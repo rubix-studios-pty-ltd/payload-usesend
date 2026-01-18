@@ -137,7 +137,7 @@
             "noNamespace": "error",
             "useArrayLiterals": "error",
             "useAsConstAssertion": "error",
-            "useBlockStatements": "warn",
+            "useBlockStatements": "off",
             "useConst": "error"
           },
           "suspicious": {
