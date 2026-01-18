@@ -47,23 +47,19 @@
       "default": "./dist/index.js"
     }
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "pnpm build:types && pnpm build:swc",
     "build:swc": "swc ./src -d ./dist --config-file .swcrc-build --strip-leading-paths",
     "build:types": "tsc --emitDeclarationOnly --outDir dist",
-    "clean": "rimraf -g {dist,*.tsbuildinfo}",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "clean": "rimraf -g {dist,*.tsbuildinfo} && pnpm exec biome check --write",
     "test": "jest",
-    "update": "pnpm update --latest && pnpm install && pnpm prune && pnpm dedupe",
+    "update": "pnpm update --latest && pnpm install && pnpm prune && pnpm dedupe && pnpm run clean",
     "release": "semantic-release"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.3.11",
     "@jest/globals": "^30.2.0",
-    "@payloadcms/eslint-config": "^3.28.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@swc/cli": "^0.7.10",

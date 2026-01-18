@@ -1,6 +1,5 @@
-import type { Payload } from 'payload'
-
 import { jest } from '@jest/globals'
+import type { Payload } from 'payload'
 
 import { sendAdapter } from './index.js'
 
@@ -21,14 +20,15 @@ describe('email-useSend', () => {
   })
 
   it('should handle sending an email', async () => {
-  global.fetch = jest.spyOn(global, 'fetch').mockImplementation(
-    (_input: RequestInfo | URL, _init?: RequestInit) =>
-      Promise.resolve({
-        json: () => Promise.resolve({ emailId: 'test-id' }),
-        ok: true,
-        status: 200,
-      } as Response)
-  ) as unknown as typeof global.fetch
+    global.fetch = jest
+      .spyOn(global, 'fetch')
+      .mockImplementation((_input: RequestInfo | URL, _init?: RequestInit) =>
+        Promise.resolve({
+          json: () => Promise.resolve({ emailId: 'test-id' }),
+          ok: true,
+          status: 200,
+        } as Response)
+      ) as unknown as typeof global.fetch
 
     const adapter = sendAdapter({
       apiKey,
@@ -44,7 +44,7 @@ describe('email-useSend', () => {
       to,
     })
 
-    const apiURL = `${useSendUrl?.replace(/\/+$/, "")}/api/v1/emails`
+    const apiURL = `${useSendUrl?.replace(/\/+$/, '')}/api/v1/emails`
     // @ts-expect-error Mock fetch doesn't have a type definition
     expect(global.fetch.mock.calls[0][0]).toStrictEqual(apiURL)
     // @ts-expect-error Mock fetch doesn't have a type definition
@@ -62,17 +62,18 @@ describe('email-useSend', () => {
     const errorResponse = {
       error: {
         code: 'FORBIDDEN',
-        message: 'Invalid API token'
-      }
+        message: 'Invalid API token',
+      },
     }
-    global.fetch = jest.spyOn(global, 'fetch').mockImplementation(
-      (_input: RequestInfo | URL, _init?: RequestInit) =>
+    global.fetch = jest
+      .spyOn(global, 'fetch')
+      .mockImplementation((_input: RequestInfo | URL, _init?: RequestInit) =>
         Promise.resolve({
           json: () => Promise.resolve(errorResponse),
           ok: false,
           status: 403,
         } as Response)
-    ) as unknown as typeof global.fetch
+      ) as unknown as typeof global.fetch
 
     const adapter = sendAdapter({
       apiKey,
@@ -87,9 +88,7 @@ describe('email-useSend', () => {
         subject,
         text,
         to,
-      }),
-    ).rejects.toThrow(
-      `Error sending email: 403 ${errorResponse.error.code}`,
-    )
+      })
+    ).rejects.toThrow(`Error sending email: 403 ${errorResponse.error.code}`)
   })
 })
