@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.2.1...v1.2.2) (2026-01-23)
+
+
+### Bug Fixes
+
+* disable useBlockStatements rule in linter configuration ([fa2b834](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/fa2b834a09122cfbf59bd64bec28ade51aac8375))
+* update caniuse-lite to version 1.0.30001765 in pnpm-lock.yaml ([faad7e7](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/faad7e7c49aaf99e209ee2c2bf971de17b4febe5))
+
 ## [1.2.1](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.2.0...v1.2.1) (2026-01-15)
 
 
