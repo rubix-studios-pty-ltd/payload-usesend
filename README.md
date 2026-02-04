@@ -1,5 +1,9 @@
 # PayloadCMS + useSend Email Adapter
 
+useSend is an API-first email delivery platform built for transactional and marketing email workflows. It adopts an architectural model comparable to Resend while remaining fully open source and self-hostable. This combination enables teams to standardise email delivery without surrendering control over infrastructure, deployment topology, or data locality.
+
+The platform exposes a REST-based interface for email delivery and supports provider-native capabilities such as templates, dynamic variables, and scheduled sends. By abstracting the underlying delivery infrastructure, useSend simplifies application integration while allowing organisations to retain operational and regulatory control.
+
 This adapter integrates [PayloadCMS](https://payloadcms.com) with the [useSend](https://usesend.com) REST API for transactional and marketing emails.
 
 [![npm version](https://img.shields.io/npm/v/@rubixstudios/payload-usesend.svg)](https://www.npmjs.com/package/@rubixstudios/payload-usesend)
