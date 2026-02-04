@@ -5,6 +5,10 @@ This adapter integrates [PayloadCMS](https://payloadcms.com) with the [useSend](
 [![npm version](https://img.shields.io/npm/v/@rubixstudios/payload-usesend.svg)](https://www.npmjs.com/package/@rubixstudios/payload-usesend)
 ![Release](https://github.com/rubix-studios-pty-ltd/payload-usesend/actions/workflows/release.yml/badge.svg)
 
+## Documentation
+
+See the [full documentation](https://rubixstudios.com.au/documents/usesend) for comprehensive guides, features, comparisons, and configuration examples.
+
 ## Installation
 
 ```sh
