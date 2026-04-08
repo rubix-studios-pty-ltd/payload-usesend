@@ -1,5 +1,5 @@
 import { jest } from '@jest/globals'
-import type { Payload } from 'payload'
+import { type Payload } from 'payload'
 
 import { sendAdapter } from './index.js'
 
