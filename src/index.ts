@@ -1,4 +1,4 @@
-import { APIError, type SendEmailOptions } from 'payload'
+import { type SendEmailOptions } from 'payload'
 
 import {
   type useSendAdapterArgs,
@@ -61,7 +61,7 @@ export const sendAdapter = (args: useSendAdapterArgs): useSendEmailAdapter => {
           formattedError += ` ${data.error.code} - ${data.error.message}`
         }
 
-        throw new APIError(formattedError, statusCode)
+        throw new UseSendError(formattedError, statusCode)
       }
     },
   })
@@ -92,7 +92,7 @@ function mapPayloadToUseSendEmail(
 
   if (message.attachments?.length) {
     if (message.attachments.length > 10) {
-      throw new APIError('Maximum of 10 attachments allowed', 400)
+      throw new UseSendError('Maximum of 10 attachments allowed', 400)
     }
     emailOptions.attachments = mapAttachments(message.attachments)
   }
@@ -152,12 +152,12 @@ function mapAttachments(
   }
 
   if (attachments.length > 10) {
-    throw new APIError('Maximum of 10 attachments allowed', 400)
+    throw new UseSendError('Maximum of 10 attachments allowed', 400)
   }
 
   return attachments.map((attachment) => {
     if (!attachment.filename || !attachment.content) {
-      throw new APIError('Attachment is missing filename or content', 400)
+      throw new UseSendError('Attachment is missing filename or content', 400)
     }
 
     if (typeof attachment.content === 'string') {
@@ -174,6 +174,15 @@ function mapAttachments(
       }
     }
 
-    throw new APIError('Attachment content must be a string or a buffer', 400)
+    throw new UseSendError('Attachment content must be a string or a buffer', 400)
   })
+}
+
+class UseSendError extends Error {
+  status: number
+
+  constructor(message: string, status: number) {
+    super(message)
+    this.status = status
+  }
 }
