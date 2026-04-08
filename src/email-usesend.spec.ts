@@ -13,7 +13,7 @@ describe('email-useSend', () => {
   const subject = 'This was sent on init'
   const text = 'This is my message body'
 
-  const mockPayload = {} as unknown as Payload
+  const mockPayload = {} as Payload
 
   afterEach(() => {
     jest.clearAllMocks()
