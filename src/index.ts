@@ -17,6 +17,7 @@ export const sendAdapter = (args: useSendAdapterArgs): useSendEmailAdapter => {
     apiKey,
     defaultFromAddress,
     defaultFromName,
+    idempotencyKey,
     scheduledAt,
     templateId,
     useSendUrl,
@@ -46,6 +47,7 @@ export const sendAdapter = (args: useSendAdapterArgs): useSendEmailAdapter => {
         headers: {
           Authorization: `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
+          ...(idempotencyKey ? { 'Idempotency-Key': idempotencyKey } : {}),
         },
         method: 'POST',
       })
@@ -78,6 +80,7 @@ function mapPayloadToUseSendEmail(
     from: mapFromAddress(message.from, defaultFromName, defaultFromAddress),
     subject: message.subject,
     to: mapAddresses(message.to),
+    headers: mapHeaders(message.headers),
   }
 
   if (message.text?.toString().trim().length > 0) {
@@ -185,4 +188,29 @@ class UseSendError extends Error {
     super(message)
     this.status = status
   }
+}
+
+function mapHeaders(headers: SendEmailOptions['headers']): Record<string, string> | undefined {
+  if (!headers) {
+    return undefined
+  }
+
+  if (Array.isArray(headers)) {
+    return headers.reduce<Record<string, string>>((acc, { key, value }) => {
+      acc[key] = value
+      return acc
+    }, {})
+  }
+
+  return Object.entries(headers).reduce<Record<string, string>>((acc, [key, value]) => {
+    if (typeof value === 'string') {
+      acc[key] = value
+    } else if (Array.isArray(value)) {
+      acc[key] = value.join(', ')
+    } else if (value && typeof value === 'object' && 'value' in value) {
+      const headerValue = (value as { value?: unknown }).value
+      acc[key] = typeof headerValue === 'string' ? headerValue : String(headerValue ?? '')
+    }
+    return acc
+  }, {})
 }
