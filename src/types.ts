@@ -4,6 +4,7 @@ export type useSendAdapterArgs = {
   apiKey: string
   defaultFromAddress: string
   defaultFromName: string
+  idempotencyKey?: string
   scheduledAt?: string
   templateId?: string
   useSendUrl: string
@@ -49,6 +50,13 @@ export type useSendEmailOptions = {
    * @link https://docs.usesend.com/api-reference/emails/send-email#body-from
    */
   from: string
+
+  /**
+   * Custom email headers. For example: `{ "X-Custom-Header": "Custom Value" }`
+   *
+   * @link https://docs.usesend.com/api-reference/emails/send-email#body-headers
+   */
+  headers?: Record<string, string>
 
   /**
    * The HTML version of the message.

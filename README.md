@@ -37,14 +37,30 @@ import { sendAdapter } from '@rubixstudios/payload-usesend'
 export default buildConfig({
   email: sendAdapter({
     apiKey: process.env.USESEND_API_KEY!,
-    useSendUrl: process.env.USESEND_URL!,
-    defaultFromName: 'Rubix Studios',
     defaultFromAddress: 'example@mail.com',
+    defaultFromName: 'Rubix Studios',
+    useSendUrl: process.env.USESEND_URL!,
     // Optional:
+    // idempotencyKey: 'order-123',
     // scheduledAt: '2025-08-01T10:00:00Z',
     // templateId: 'template-uuid',
     // variables: { firstName: 'Vincent' }
   }),
+})
+```
+
+Custom email headers are set on the email message itself and are forwarded to useSend as the `headers` object:
+
+```ts
+await payload.sendEmail({
+  to: 'user@example.com',
+  from: 'Rubix Studios <example@mail.com>',
+  subject: 'Welcome',
+  html: '<p>Hello</p>',
+  headers: {
+    'List-Unsubscribe': '<https://example.com/unsubscribe>',
+    'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+  },
 })
 ```
 
@@ -54,6 +70,7 @@ export default buildConfig({
 | useSendUrl         | string | Yes      | -       | useSend base URL     |
 | defaultFromAddress | string | Yes      | -       | Default sender email |
 | defaultFromName    | string | Yes      | -       | Default sender name  |
+| idempotencyKey     | string | No       | -       | Optional retry key   |
 | scheduledAt        | string | No       | -       | ISO date string      |
 | templateId         | string | No       | -       | Email template ID    |
 | variables          | object | No       | -       | Template variables   |
