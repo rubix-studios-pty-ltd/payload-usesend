@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.1](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.4.0...v1.4.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* **ci:** correct semantic-release plugin configuration ([bed0be4](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/bed0be4a83f470fccc51ca24c078d3bec018b506))
+
 # [1.4.0](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.3.3...v1.4.0) (2026-04-15)
 
 
