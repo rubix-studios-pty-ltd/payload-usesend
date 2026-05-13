@@ -58,17 +58,17 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.14",
-    "@jest/globals": "^30.3.0",
+    "@biomejs/biome": "2.4.15",
+    "@jest/globals": "^30.4.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@swc/cli": "^0.8.1",
     "@swc/core": "^1.15.33",
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.6.0",
+    "@types/node": "^25.7.0",
     "conventional-changelog-conventionalcommits": "^9.3.1",
-    "jest": "^30.3.0",
+    "jest": "^30.4.2",
     "rimraf": "^6.1.3",
     "semantic-release": "^25.0.3",
     "typescript": "^6.0.3"
@@ -85,5 +85,5 @@
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "packageManager": "pnpm@11.0.8"
+  "packageManager": "pnpm@11.1.1"
 }
