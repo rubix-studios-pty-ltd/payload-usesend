@@ -122,7 +122,7 @@
           "level": "on",
           "options": {
             "groups": [
-              [":NODE:", ":BUN:", ":PACKAGE:", "react", "react/**", "react-*", "react-*/**"],
+              [":NODE:", ":BUN:", "react", "react/**", "react-*", "react-*/**", ":PACKAGE:"],
               ":BLANK_LINE:",
               ["**", "!**/*.css", "!**/*.scss"],
               ":BLANK_LINE:",
