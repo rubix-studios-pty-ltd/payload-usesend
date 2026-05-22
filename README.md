@@ -88,5 +88,5 @@ For support or inquiries:
 
 ## Author
 
-Rubix Studios Pty. Ltd.  
+Rubix Studios  
 [https://rubixstudios.com.au](https://rubixstudios.com.au)
