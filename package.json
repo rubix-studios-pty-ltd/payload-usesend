@@ -63,7 +63,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@swc/cli": "^0.8.1",
-    "@swc/core": "^1.15.33",
+    "@swc/core": "^1.15.40",
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30.0.0",
     "@types/node": "^25.9.1",
@@ -74,7 +74,7 @@
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
-    "payload": "^3.84.0"
+    "payload": "^3.85.0"
   },
   "engines": {
     "node": ">=24",
@@ -85,5 +85,5 @@
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "packageManager": "pnpm@11.2.2"
+  "packageManager": "pnpm@11.3.0"
 }
