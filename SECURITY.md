@@ -12,9 +12,9 @@ We take the security of PayloadCMS + useSend Email Adapter seriously. If you bel
 
 1. **DO NOT** create a public GitHub issue for the vulnerability.
 2. Contact us directly at one of the following:
-   - X: [@rubixvi](https://x.com/rubixvi)
+   - X: [@rubixstory](https://x.com/rubixstory)
    - Email: [Contact Form](https://rubixstudios.com.au/contact)
-   - Facebook: [rubixvi](https://www.facebook.com/rubixvi/)
+   - Facebook: [rubixstudios](https://www.facebook.com/rubixstudios)
 
 Please include the following details in your report:
 
