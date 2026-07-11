@@ -7,7 +7,7 @@ import {
   type useSendResponse,
 } from './types.js'
 
-export { type useSendAdapterArgs } from './types.js'
+export type { useSendAdapterArgs } from './types.js'
 
 /**
  * Email adapter for [useSend](https://usesend.com) REST API

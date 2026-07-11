@@ -67,7 +67,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "preset": "none",
+      "preset": "recommended",
       "style": {
         "useImportType": {
           "level": "on",
