@@ -85,5 +85,5 @@
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "packageManager": "pnpm@11.12.0"
+  "packageManager": "pnpm@11.13.0"
 }
