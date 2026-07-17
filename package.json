@@ -58,7 +58,7 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.3",
+    "@biomejs/biome": "2.5.4",
     "@jest/globals": "^30.4.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -85,5 +85,5 @@
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "packageManager": "pnpm@11.13.0"
+  "packageManager": "pnpm@11.13.1"
 }
