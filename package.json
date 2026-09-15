@@ -58,17 +58,17 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.11",
-    "@jest/globals": "^30.5.0",
+    "@biomejs/biome": "2.5.13",
+    "@jest/globals": "^30.5.1",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/git": "^11.0.1",
     "@swc/cli": "^0.8.1",
-    "@swc/core": "^1.16.1",
+    "@swc/core": "^1.16.2",
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.4.0",
+    "@types/node": "^26.6.1",
     "conventional-changelog-conventionalcommits": "^10.4.0",
-    "jest": "^30.5.0",
+    "jest": "^30.5.1",
     "rimraf": "^6.1.3",
     "semantic-release": "^25.0.9",
     "typescript": "7.0.2"
