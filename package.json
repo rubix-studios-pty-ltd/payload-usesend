@@ -1,6 +1,6 @@
 {
   "name": "@rubixstudios/payload-usesend",
-  "version": "1.0.14",
+  "version": "1.5.4",
   "description": "PayloadCMS adapter for sending emails via the useSend API (previously Unsend).",
   "license": "MIT",
   "author": "Rubix Studios <hello@rubixstudios.com.au> (https://rubixstudios.com.au)",
@@ -47,7 +47,9 @@
       "default": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "pnpm build:types && pnpm build:swc",
     "build:swc": "swc ./src -d ./dist --config-file .swcrc-build --strip-leading-paths",
