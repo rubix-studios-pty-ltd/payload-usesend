@@ -1,3 +1,4 @@
+
 import { randomUUID } from 'node:crypto'
 import { type SendEmailOptions } from 'payload'
 
@@ -25,6 +26,8 @@ export const sendAdapter = (args: useSendAdapterArgs): useSendEmailAdapter => {
     variables,
   } = args
 
+  const url = emailUrl(useSendUrl)
+
   const adapter: useSendEmailAdapter = () => ({
     name: 'usesend-rest',
     defaultFromName,
@@ -49,7 +52,7 @@ export const sendAdapter = (args: useSendAdapterArgs): useSendEmailAdapter => {
           : (idempotencyKey ?? randomUUID())
 
       const res = await retryRequest(() =>
-        fetch(`${useSendUrl.replace(/\/+$/, '')}/api/v1/emails`, {
+        fetch(url, {
           body: JSON.stringify(payload),
           headers: {
             Authorization: `Bearer ${apiKey}`,
@@ -261,4 +264,14 @@ function retryDelay(header: null | string, attempt: number): number {
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+function emailUrl(url: string): string {
+  let end = url.length
+
+  while (end > 0 && url[end - 1] === '/') {
+    end--
+  }
+
+  return `${url.slice(0, end)}/api/v1/emails`
 }
