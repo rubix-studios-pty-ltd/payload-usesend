@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.1](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.6.0...v1.6.1) (2026-10-11)
+
+
+### Bug Fixes
+
+* **pnpm-lock:** downgrade payload dependency to 3.90.0 ([b5e7cc9](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/b5e7cc9cfb3a247f539f44839fe2cf3e0a9e39ca))
+
 # [1.6.0](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.5.4...v1.6.0) (2026-10-11)
 
 
