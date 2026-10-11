@@ -167,7 +167,7 @@ importers:
   .:
     dependencies:
       payload:
-        specifier: ^3.90.2
+        specifier: ^3.90.0
         version: 3.90.2(graphql@16.14.2)(supports-color@8.1.1)(typescript@7.0.2)
     devDependencies:
       '@biomejs/biome':
