@@ -40,11 +40,12 @@ export default buildConfig({
     defaultFromAddress: 'example@mail.com',
     defaultFromName: 'Rubix Studios',
     useSendUrl: process.env.USESEND_URL!,
-    // Optional:
-    // idempotencyKey: 'order-123',
+
+    // Optional
+    // idempotencyKey: () => crypto.randomUUID(),
     // scheduledAt: '2025-08-01T10:00:00Z',
     // templateId: 'template-uuid',
-    // variables: { firstName: 'Vincent' }
+    // variables: { firstName: 'Vincent' },
   }),
 })
 ```
@@ -64,16 +65,16 @@ await payload.sendEmail({
 })
 ```
 
-| Option             | Type   | Required | Default | Description          |
-|--------------------|--------|----------|---------|----------------------|
-| apiKey             | string | Yes      | -       | useSend API key      |
-| useSendUrl         | string | Yes      | -       | useSend base URL     |
-| defaultFromAddress | string | Yes      | -       | Default sender email |
-| defaultFromName    | string | Yes      | -       | Default sender name  |
-| idempotencyKey     | string | No       | -       | Optional retry key   |
-| scheduledAt        | string | No       | -       | ISO date string      |
-| templateId         | string | No       | -       | Email template ID    |
-| variables          | object | No       | -       | Template variables   |
+| Option               | Type                 | Required | Default | Description                      |
+| -------------------- | -------------------- | -------- | ------- | -------------------------------- |
+| `apiKey`             | `string`             | Yes      | -       | useSend API key                  |
+| `useSendUrl`         | `string`             | Yes      | -       | useSend base URL                 |
+| `defaultFromAddress` | `string`             | Yes      | -       | Default sender email             |
+| `defaultFromName`    | `string`             | Yes      | -       | Default sender name              |
+| `idempotencyKey`     | `string \| function` | No       | Auto    | Unique key reused across retries |
+| `scheduledAt`        | `string`             | No       | -       | ISO 8601 scheduled delivery date |
+| `templateId`         | `string`             | No       | -       | Email template ID                |
+| `variables`          | `object`             | No       | -       | Email template variables         |
 
 ## License
 

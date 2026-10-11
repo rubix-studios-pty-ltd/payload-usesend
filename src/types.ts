@@ -1,10 +1,10 @@
-import { type EmailAdapter } from 'payload'
+import { type EmailAdapter, type SendEmailOptions } from 'payload'
 
 export type useSendAdapterArgs = {
   apiKey: string
   defaultFromAddress: string
   defaultFromName: string
-  idempotencyKey?: string
+  idempotencyKey?: string | ((message: SendEmailOptions) => string)
   scheduledAt?: string
   templateId?: string
   useSendUrl: string
