@@ -115,6 +115,16 @@
       "selfCloseVoidElements": "always"
     }
   },
+  "overrides": [
+    {
+      "includes": ["**/package.json"],
+      "json": {
+        "formatter": {
+          "expand": "always"
+        }
+      }
+    }
+  ],
   "assist": {
     "enabled": true,
     "actions": {
