@@ -76,7 +76,7 @@
     "typescript": "7.0.2"
   },
   "peerDependencies": {
-    "payload": "^3.90.2"
+    "payload": "^3.90.0"
   },
   "engines": {
     "node": ">=24",
