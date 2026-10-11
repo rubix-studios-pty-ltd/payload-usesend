@@ -1,3 +1,5 @@
+
+import { randomUUID } from 'node:crypto'
 import { type SendEmailOptions } from 'payload'
 
 import {
@@ -24,6 +26,8 @@ export const sendAdapter = (args: useSendAdapterArgs): useSendEmailAdapter => {
     variables,
   } = args
 
+  const url = emailUrl(useSendUrl)
+
   const adapter: useSendEmailAdapter = () => ({
     name: 'usesend-rest',
     defaultFromName,
@@ -42,29 +46,37 @@ export const sendAdapter = (args: useSendAdapterArgs): useSendEmailAdapter => {
         ...(variables ? { variables } : {}),
       }
 
-      const res = await fetch(`${useSendUrl}/api/v1/emails`, {
-        body: JSON.stringify(payload),
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          'Content-Type': 'application/json',
-          ...(idempotencyKey ? { 'Idempotency-Key': idempotencyKey } : {}),
-        },
-        method: 'POST',
-      })
+      const key =
+        typeof idempotencyKey === 'function'
+          ? idempotencyKey(message)
+          : (idempotencyKey ?? randomUUID())
 
-      const data = (await res.json()) as useSendResponse
+      const res = await retryRequest(() =>
+        fetch(url, {
+          body: JSON.stringify(payload),
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+            'Idempotency-Key': key,
+          },
+          method: 'POST',
+          signal: AbortSignal.timeout(30_000),
+        })
+      )
 
-      if ('emailId' in data) {
+      const data = (await res.json().catch(() => null)) as null | useSendResponse
+
+      if (res.ok && data && 'emailId' in data && typeof data.emailId === 'string') {
         return data
-      } else {
-        const statusCode = res.status
-        let formattedError = `Error sending email: ${statusCode}`
-        if ('error' in data) {
-          formattedError += ` ${data.error.code} - ${data.error.message}`
-        }
-
-        throw new UseSendError(formattedError, statusCode)
       }
+
+      let formattedError = `Error sending email: ${res.status}`
+
+      if (data && 'error' in data) {
+        formattedError += ` ${data.error.code} - ${data.error.message}`
+      }
+
+      throw new UseSendError(formattedError, res.status)
     },
   })
 
@@ -94,9 +106,6 @@ function mapPayloadToUseSendEmail(
   }
 
   if (message.attachments?.length) {
-    if (message.attachments.length > 10) {
-      throw new UseSendError('Maximum of 10 attachments allowed', 400)
-    }
     emailOptions.attachments = mapAttachments(message.attachments)
   }
 
@@ -213,4 +222,56 @@ function mapHeaders(headers: SendEmailOptions['headers']): Record<string, string
     }
     return acc
   }, {})
+}
+
+async function retryRequest(request: () => Promise<Response>): Promise<Response> {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    let response: Response
+
+    try {
+      response = await request()
+    } catch (error) {
+      if (attempt === 2) {
+        throw error
+      }
+
+      await sleep(500 * 2 ** attempt)
+      continue
+    }
+
+    if (attempt === 2 || ![429, 500, 502, 503, 504].includes(response.status)) {
+      return response
+    }
+
+    await sleep(retryDelay(response.headers.get('retry-after'), attempt))
+  }
+
+  throw new Error('Email retries exhausted')
+}
+
+function retryDelay(header: null | string, attempt: number): number {
+  if (header) {
+    const seconds = Number(header)
+    const delay = Number.isFinite(seconds) ? seconds * 1000 : Date.parse(header) - Date.now()
+
+    if (Number.isFinite(delay) && delay >= 0) {
+      return Math.min(delay, 30_000)
+    }
+  }
+
+  return 500 * 2 ** attempt
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+function emailUrl(url: string): string {
+  let end = url.length
+
+  while (end > 0 && url[end - 1] === '/') {
+    end--
+  }
+
+  return `${url.slice(0, end)}/api/v1/emails`
 }
