@@ -1,4 +1,3 @@
-
 import { randomUUID } from 'node:crypto'
 import { type SendEmailOptions } from 'payload'
 
