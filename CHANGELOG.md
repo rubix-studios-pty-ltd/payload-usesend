@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.2](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.6.1...v1.6.2) (2026-10-23)
+
+
+### Bug Fixes
+
+* **biome:** Changelog build interruption. ([f4d27a0](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/f4d27a01c793b3bc991dcbe1ee311497078bce8d))
+* **sec:** Node - CVE-2026-111497 ([19d4053](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/19d4053007621842f4e7e7af462090db8646944c))
+
 ## [1.6.1](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.6.0...v1.6.1) (2026-10-11)
 
 
