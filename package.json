@@ -60,7 +60,7 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.4",
+    "@biomejs/biome": "2.6.5",
     "@jest/globals": "^30.5.2",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/git": "^11.0.1",
@@ -76,7 +76,7 @@
     "typescript": "7.0.2"
   },
   "peerDependencies": {
-    "payload": "^3.90.0"
+    "payload": "^3.93.0"
   },
   "engines": {
     "node": ">=24.22.1 <25 || >=26.12.1",
