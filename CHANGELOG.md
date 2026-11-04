@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.3](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.6.2...v1.6.3) (2026-11-04)
+
+
+### Bug Fixes
+
+* **sec:** bump mini payload ([9ed34f2](https://github.com/rubix-studios-pty-ltd/payload-usesend/commit/9ed34f2c9015f6d7f844c1f0fe3f83afe887da6b))
+
 ## [1.6.2](https://github.com/rubix-studios-pty-ltd/payload-usesend/compare/v1.6.1...v1.6.2) (2026-10-23)
 
 
