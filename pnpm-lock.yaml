@@ -176,8 +176,8 @@ importers:
   .:
     dependencies:
       payload:
-        specifier: ^3.93.0 || ^4.0.0-beta.10
-        version: 3.93.0(graphql@16.14.2)(supports-color@8.1.1)(typescript@7.0.2)
+        specifier: ^3.94.0 || ^4.0.0-beta.10
+        version: 3.94.0(graphql@16.14.2)(supports-color@8.1.1)(typescript@7.0.2)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.6.8
@@ -1032,8 +1032,8 @@ packages:
     resolution: {integrity: sha512-7FNeNl8NCE7aINx7WXiKQrPYZWC/hvrTsmk6zmxbI7LTXE7hVek/n8AfVgpe2y82zl3w0HvCHN0bVKMBoJcC0w==}
     engines: {node: '>= 10.0.0'}
 
-  '@payloadcms/translations@3.93.0':
-    resolution: {integrity: sha512-lJl0KgaYH8FMjKCjd4AVjYAd9JDRR9+D5u+XQ47Tw4KJSD8q/P9PNqLNuSCXc0+u2+hAjJMEr93/9PpVDkFh5w==}
+  '@payloadcms/translations@3.94.0':
+    resolution: {integrity: sha512-HHuttYhuZym4OwF0qluYZ+7hLWLxC+d0oNMZgNtgVfpCgccyZ97SFi/KorPghw8mD+Vh2nvVD+oraRIA/6uBMw==}
 
   '@pinojs/redact@0.4.0':
     resolution: {integrity: sha512-k2ENnmBugE/rzQfEcdWHcCY+/FM3VLzH9cYEsbdsoqrvzAKRhUZeRNhAZvB8OitQJ1TBed3yqWtdjzS6wJKBwg==}
@@ -2998,9 +2998,9 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
 
-  payload@3.93.0:
-    resolution: {integrity: sha512-QUCVL1I1ZNSIvHMMniTtxlVDQiuunIuUZHgo6BP0421+qP3OrgP9cxbfwv7Qx+t18EniPQZlkxZQssFxlOa/AA==}
-    engines: {node: ^22.23.4 || >=24.22.1}
+  payload@3.94.0:
+    resolution: {integrity: sha512-1cHOX5V8lfVmtfZugGSd1nU2NR4tAetSrqBHeMKWQ4+5p7AGQ8dj8/oQBKeN6FeAmfjoRRmP7jyOiQF75MTiZQ==}
+    engines: {node: ^22.23.5 || ^24.22.3 || >=26.13.1}
     hasBin: true
     peerDependencies:
       graphql: ^16.8.1
@@ -4480,7 +4480,7 @@ snapshots:
       '@parcel/watcher-win32-arm64': 2.6.0
       '@parcel/watcher-win32-x64': 2.6.0
 
-  '@payloadcms/translations@3.93.0':
+  '@payloadcms/translations@3.94.0':
     dependencies:
       date-fns: 4.1.0
 
@@ -6507,10 +6507,10 @@ snapshots:
 
   path-type@4.0.0: {}
 
-  payload@3.93.0(graphql@16.14.2)(supports-color@8.1.1)(typescript@7.0.2):
+  payload@3.94.0(graphql@16.14.2)(supports-color@8.1.1)(typescript@7.0.2):
     dependencies:
       '@next/env': 15.5.28
-      '@payloadcms/translations': 3.93.0
+      '@payloadcms/translations': 3.94.0
       '@types/busboy': 1.5.4
       ajv: 8.18.0
       bson-objectid: 2.0.4
