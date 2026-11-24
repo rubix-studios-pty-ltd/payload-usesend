@@ -60,7 +60,7 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.8",
+    "@biomejs/biome": "^2.6.9",
     "@jest/globals": "^30.5.2",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/git": "^11.0.1",
@@ -76,7 +76,7 @@
     "typescript": "^7.0.2"
   },
   "peerDependencies": {
-    "payload": "^3.94.1 || ^4.0.0-beta.11"
+    "payload": "^3.94.2 || ^4.0.0-beta.12"
   },
   "engines": {
     "node": ">=24.22.3 <25 || >=26.13.1",
@@ -87,5 +87,5 @@
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "packageManager": "pnpm@12.21.0"
+  "packageManager": "pnpm@12.23.0"
 }
